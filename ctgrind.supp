@@ -1,5 +1,5 @@
 {
-   bash_free
+   expand_string_assignment_invalid_free
    Memcheck:Free
    fun:free
    obj:/bin/bash
@@ -12,5 +12,21 @@
    obj:/bin/bash
    obj:/bin/bash
    obj:/bin/bash
+   fun:execute_command_internal
+}
+{
+   expand_word_unsplit_invalid_free
+   Memcheck:Free
+   fun:free
+   obj:/bin/bash
+   fun:run_unwind_frame
+   fun:parse_and_execute
+   fun:command_substitute
+   obj:/bin/bash
+   obj:/bin/bash
+   fun:expand_word_unsplit
+   obj:/bin/bash
+   fun:execute_command_internal
+   fun:execute_command
    fun:execute_command_internal
 }
