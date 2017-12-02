@@ -1,7 +1,7 @@
 
 AUTOMAKE_OPTIONS = foreign 1.10 dist-bzip2
 
-include $(top_srcdir)/Makefile.all.am 
+include $(top_srcdir)/Makefile.all.am
 
 TOOLS =		memcheck \
 		cachegrind \
@@ -37,7 +37,8 @@ SUBDIRS = \
 DIST_SUBDIRS  = $(SUBDIRS)
 
 SUPP_FILES = \
-	glibc-2.2.supp glibc-2.3.supp glibc-2.4.supp glibc-2.5.supp \
+	ctgrind.supp \
+        glibc-2.2.supp glibc-2.3.supp glibc-2.4.supp glibc-2.5.supp \
 	glibc-2.6.supp glibc-2.7.supp glibc-2.X.supp.in \
 	xfree-3.supp xfree-4.supp \
 	glibc-2.34567-NPTL-helgrind.supp \
